@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "TtalMYgx8sY8NqlugnvZYL9RHGqz+U5jsJ3eptot1eg=",
+  "Source": "ums-dotnet",
+  "BasePath": "_content/ums-dotnet",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
