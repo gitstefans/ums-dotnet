@@ -8,6 +8,7 @@ namespace ums_dotnet.Profiles
         {
             CreateMap<Entities.User, Models.UserDto>();
             CreateMap<Models.UserForCreationDto, Entities.User>();
+            CreateMap<Models.UserForFilteringDto, Models.UserDto>();
         }
     }
 }

@@ -5,7 +5,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
 namespace ums_dotnet.Migrations
 {
-    public partial class InitialUsersMigration : Migration
+    public partial class InitialMigration : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -55,7 +55,19 @@ namespace ums_dotnet.Migrations
                 {
                     { 1, "johnny@depp.com", "Johnny", "Depp", "johnny123", "Active", "John1" },
                     { 2, "jimm@carrey.com", "Jimm", "Carrey", "Jimm123", "Active", "Jimm1" },
-                    { 3, "angelina@jolie.com", "Angelina", "Jolie", "angelina123", "Active", "Angelina1" }
+                    { 3, "angelina@jolie.com", "Angelina", "Jolie", "angelina123", "Active", "Angelina1" },
+                    { 4, "dwayne@johnson.com", "Dwayne", "Johnson", "dwayne123", "Active", "Dwayne1" },
+                    { 5, "tom@hanks.com", "Tom", "Hanks", "tom123", "Active", "Tom1" },
+                    { 6, "tom@cruise.com", "Tom", "Cruise", "tom123", "Active", "Tom1" },
+                    { 7, "monica@belucci.com", "Monica", "Belucci", "belucci123", "Inactive", "Monica1" },
+                    { 8, "anthony@hopkins.com", "Anthony", "Hopkins", "anthony123", "Inactive", "Anthony1" },
+                    { 9, "jack@nicholson.com", "Jack", "Nicholson", "jack123", "Inactive", "Jack1" },
+                    { 10, "al@pacino.com", "Al", "Pacino", "al123", "Active", "Al1" },
+                    { 11, "dustin@hoffman.com", "Dustin", "Hoffman", "dustin123", "Active", "Dustin1" },
+                    { 12, "danzel@washington.com", "Denzel", "Washington", "danzel123", "Active", "Danzel1" },
+                    { 13, "robin@williams.com", "Robin", "Williams", "robin123", "Active", "Robin1" },
+                    { 14, "morgan@freeman.com", "Morgan", "Freeman", "morgan123", "Active", "Morgan1" },
+                    { 15, "gene@hackman.com", "Gene", "Hackman", "gene123", "Inactive", "Gene1" }
                 });
 
             migrationBuilder.CreateIndex(

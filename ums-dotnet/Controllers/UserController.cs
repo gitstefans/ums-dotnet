@@ -12,6 +12,7 @@ namespace ums_dotnet.Controllers
     {
         private readonly IUserRepository _userRepository;
         private readonly IMapper _mapper;
+        const int pageSize = 10;
 
         public UserController(IUserRepository userRepository, IMapper mapper)
         {
@@ -22,9 +23,9 @@ namespace ums_dotnet.Controllers
         }
 
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<UserDto>>> GetUsers()
+        public async Task<ActionResult<IEnumerable<UserDto>>> GetUsers([FromBody] UserForFilteringDto searchParams, int pageNumber = 1)
         {
-            var users = await _userRepository.GetUsersAsync();
+            var users = await _userRepository.GetUsersAsync(searchParams, pageNumber, pageSize);
             return Ok(_mapper.Map<IEnumerable<UserDto>>(users));
         }
 
